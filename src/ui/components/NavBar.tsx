@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { hamburgerMenu } from '../../assets/icons'
 import { Link, NavLink } from 'react-router-dom'
+import { logo } from '../../assets/images'
 
 export const NavBar = () => {
 
@@ -31,7 +32,10 @@ export const NavBar = () => {
     return (
         <header className="text-slate-gray w-full">
             <nav className="p-4 max-container flex flex-1 justify-between items-center">
-                <h4 className="text-5xl max-md:text-4xl font-bold font-palanquin text-[#505050] hover:text-black cursor-pointer">Anddara</h4>
+                <img
+                    src={logo}
+                    className=" max-md:h-[80px] max-md:w-[400px] w-[200px] h-[40px] text-[#505050] hover:text-black cursor-pointer"
+                />
                 <ul className="flex font-medium text-xl gap-10 font-montserrat max-lg:gap-4 max-lg:text-base max-md:hidden px-6">
                     <NavLink to='/'>
                         <li className="hover:text-black cursor-pointer">Home</li>
@@ -63,7 +67,7 @@ export const NavBar = () => {
 
             {
                 isOpen && (
-                    <ul className="absolute w-full righ-[0%] border-2  flex-col pt-20 z-10 text-center font-medium text-2xl gap-10 font-montserrat px-6 border-b-2 pb-10 hidden max-md:flex">
+                    <ul className="absolute w-full righ-[0%] flex-col pt-10 z-10 text-center font-medium text-2xl gap-10 font-montserrat px-6 border-b-2 pb-10 hidden max-md:flex">
                         <Link to='/'>
                             <li className="hover:text-black cursor-pointer">Home</li>
                         </Link>
