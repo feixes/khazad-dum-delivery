@@ -34,7 +34,7 @@ export const NavBar = () => {
             <nav className="max-container flex flex-1 justify-around items-center m-10">
                 <img
                     src={logo}
-                    className=" max-md:h-[70px] max-md:w-[300px] w-[200px] h-[40px] text-[#505050] hover:text-black cursor-pointer"
+                    className=" max-md:h-[35px] max-md:w-[150px] w-[200px] h-[40px] text-[#505050] hover:text-black cursor-pointer"
                 />
                 <ul className="flex font-medium text-xl gap-10 font-montserrat max-lg:gap-4 max-lg:text-base max-md:hidden px-6">
                     <NavLink to='/'>
