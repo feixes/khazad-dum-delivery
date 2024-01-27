@@ -12,6 +12,8 @@ export default {
       },
       colors: {
         'primary': "#9af5e4",
+        "primary-dark": "#2fd2bf",
+        "black-pale": "#505050",
         "coral-red": "#FF6452",
         "slate-gray": "#6D6D6D",
         "pale-blue": "#F5F6FF",

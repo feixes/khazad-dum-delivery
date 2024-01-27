@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { hamburgerMenu } from '../../assets/icons'
+import { cross, hamburgerMenu } from '../../assets/icons'
 import { Link, NavLink } from 'react-router-dom'
 import { logo } from '../../assets/images'
 
@@ -30,12 +30,14 @@ export const NavBar = () => {
 
 
     return (
-        <header className="text-slate-gray w-full">
+        <header className="text-[#505050] w-full">
             <nav className="max-container flex flex-1 justify-around items-center m-10">
-                <img
-                    src={logo}
-                    className=" max-md:h-[35px] max-md:w-[150px] w-[200px] h-[40px] text-[#505050] hover:text-black cursor-pointer"
-                />
+                <Link to='/'>
+                    <img
+                        src={logo}
+                        className=" max-md:h-[35px] max-md:w-[150px] w-[200px] h-[40px] text-[#505050] hover:text-black cursor-pointer"
+                    />
+                </Link>
                 <ul className="flex font-medium text-xl gap-10 font-montserrat max-lg:gap-4 max-lg:text-base max-md:hidden px-6">
                     <NavLink to='/'>
                         <li className="hover:text-black cursor-pointer">Home</li>
@@ -51,12 +53,12 @@ export const NavBar = () => {
                     </NavLink>
                 </ul>
                 <Link to='auth/login'>
-                    <p className="bg-primary text-[#505050] px-8 py-2 items-center font-montserrat font-bold rounded-full cursor-pointer max-md:hidden">Acceder</p>
+                    <p className="bg-primary text-[#505050] px-8 py-2 items-center font-montserrat font-bold rounded-full cursor-pointer max-md:hidden hover:bg-primary-dark transition duration-500">Acceder</p>
                 </Link>
                 <img
-                    src={hamburgerMenu}
-                    height={40}
-                    width={40}
+                    src={isOpen ? cross : hamburgerMenu}
+                    height={35}
+                    width={35}
                     alt="hamburger menu"
                     className='cursor-pointer max-md:block hidden'
                     ref={hamMenu}
@@ -81,7 +83,7 @@ export const NavBar = () => {
                             <li className="hover:text-black cursor-pointer">Contáctanos</li>
                         </Link>
                         <Link to='auth/login'>
-                            <li className="bg-primary text-[#505050] px-8 py-2 items-center font-montserrat font-bold rounded-full cursor-pointer">Acceder</li>
+                            <li className="bg-primary text-[#505050] px-8 py-2 items-center font-montserrat font-bold rounded-full cursor-pointer hover:bg-primary-dark transition duration-500">Acceder</li>
                         </Link>
                     </ul>
                 )
