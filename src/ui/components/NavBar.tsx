@@ -39,7 +39,7 @@ export const NavBar = () => {
 
     return (
         <header className="text-black-pale w-full">
-            <nav className="max-container flex flex-1 justify-around items-center m-10 mx-auto">
+            <nav className="max-container flex flex-1 justify-around items-center p-10 mx-auto">
                 <Link to='/'>
                     <img
                         src={logo}

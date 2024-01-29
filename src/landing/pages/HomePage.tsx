@@ -9,8 +9,11 @@ export const HomePage = () => {
     return (
         <>
             <Hero imgURL={mapa}>
-                <div className="border-2">
-                    <h1 className="text-8xl font-bold font-palanquin leading-[.95] tracking-tight">De la comarca a <span className="text-primary">Mordor</span> en 30 días</h1>
+                <div className="">
+                    <h1
+                        className="text-8xl font-bold font-palanquin leading-[.95] tracking-tight max-xl:text-[72px] max-[1145px]:text-6xl max-[1070px]:text-3xl">
+                        De la comarca a <span className="text-primary">Mordor</span> en 30 días
+                    </h1>
                     <p className="text-black-pale mt-6 text-xl leading-10">Transportamos cualquier tipo de joyería para su posterior destrucción en la fragua que lo forjó</p>
                     <button className="group flex justify-center btn-primary w-full py-4 text-xl mt-20">
                         Empezar
