@@ -5,6 +5,15 @@ import { logo } from '../../assets/images'
 
 export const NavBar = () => {
 
+    /*TODO:
+        - Usar Typescript de verdad
+        - Animar Iconos Burguer/Cross
+        - Animar la aparición del Menú
+        - Animación para click de botones
+        - Animación para click de menú en responsive
+        - Highlight de la pagina en la que nos encontramos <NavLink>
+    */
+
     const hamMenu = useRef(null)
 
     const [isOpen, setIsOpen] = useState(false)
@@ -28,14 +37,13 @@ export const NavBar = () => {
 
 
 
-
     return (
-        <header className="text-[#505050] w-full">
-            <nav className="max-container flex flex-1 justify-around items-center m-10">
+        <header className="text-black-pale w-full">
+            <nav className="max-container flex flex-1 justify-around items-center m-10 mx-auto">
                 <Link to='/'>
                     <img
                         src={logo}
-                        className=" max-md:h-[35px] max-md:w-[150px] w-[200px] h-[40px] text-[#505050] hover:text-black cursor-pointer"
+                        className=" max-md:h-[35px] max-md:w-[150px] w-[200px] h-[40px] text-black-pale hover:text-black cursor-pointer"
                     />
                 </Link>
                 <ul className="flex font-medium text-xl gap-10 font-montserrat max-lg:gap-4 max-lg:text-base max-md:hidden px-6">
@@ -53,7 +61,7 @@ export const NavBar = () => {
                     </NavLink>
                 </ul>
                 <Link to='auth/login'>
-                    <p className="bg-primary text-[#505050] px-8 py-2 items-center font-montserrat font-bold rounded-full cursor-pointer max-md:hidden hover:bg-primary-dark transition duration-500">Acceder</p>
+                    <p className="btn-primary px-8 py-2 max-md:hidden">Acceder</p>
                 </Link>
                 <img
                     src={isOpen ? cross : hamburgerMenu}
@@ -65,7 +73,6 @@ export const NavBar = () => {
                     onClick={handleOpen}
                 />
             </nav>
-
 
             {
                 isOpen && (
