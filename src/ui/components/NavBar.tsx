@@ -38,7 +38,7 @@ export const NavBar = () => {
 
 
     return (
-        <header className="text-black-pale w-full">
+        <header className="text-black-pale w-full max-h-[10vh]">
             <nav className="max-container flex flex-1 justify-around items-center p-10 mx-auto">
                 <Link to='/'>
                     <img

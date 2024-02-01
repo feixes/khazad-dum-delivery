@@ -30,6 +30,12 @@ export default {
         '4xl': ['48px', '58px'],
         '8xl': ['96px', '106px']
       },
+      boxShadow: {
+        '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'
+      },
+      screens: {
+        "wide": "1440px"
+      }
     },
   },
   plugins: [],
