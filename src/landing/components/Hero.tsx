@@ -1,7 +1,8 @@
-import { rightArrow, shield } from "../../assets/icons"
+import { rightArrow } from "../../assets/icons"
+import { mapa } from "../../assets/images"
 
 
-export const Hero = ({ imgURL }) => {
+export const Hero = () => {
     return (
         <div className="flex gap-16 max-[1070px]:gap-10 max-container padding max-[1070px]:flex-col">
 
@@ -19,8 +20,8 @@ export const Hero = ({ imgURL }) => {
             </div>
 
             <img
-                src={imgURL}
-                alt={imgURL}
+                src={mapa}
+                alt={mapa}
                 width={610}
                 height={100}
                 className="justify-center align-center"

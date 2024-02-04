@@ -1,7 +1,5 @@
-import { Hero } from "../../ui/components"
-
-import { mapa } from "../../assets/images"
 import { shield, check } from "../../assets/icons"
+import { Hero } from "../components/Hero"
 
 
 
@@ -11,7 +9,7 @@ export const HomePage = () => {
         <>
             <section className="mt-10 min-h-[90vh]">
 
-                <Hero imgURL={mapa} />
+                <Hero />
             </section>
 
             <section className=" padding bg-primary w-full">
