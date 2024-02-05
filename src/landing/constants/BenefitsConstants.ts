@@ -1,10 +1,10 @@
 import { location, shield, speed } from "../../assets/icons"
 
-export const featuresConstants = [
+export const benefitsConstants = [
     {
         title: 'Seguridad',
         icon: shield,
-        features: [
+        benefits: [
             'Magos blancos',
             'Enanos con hachas',
             'Elfos con arcos',
@@ -15,7 +15,7 @@ export const featuresConstants = [
     {
         title: 'Rapidez',
         icon: speed,
-        features: [
+        benefits: [
             'Andando',
             'Corriendo',
             'En sigilo',
@@ -26,10 +26,10 @@ export const featuresConstants = [
     {
         title: 'Tracking',
         icon: location,
-        features: [
+        benefits: [
             'Runas élficas',
             'Compañeros mensajeros',
-            'Mensajeros elementales',
+            'Palantirs',
             'Conexión onírica',
             'Mensajeros sombríos'
         ]

@@ -1,2 +1,3 @@
 export * from './Hero'
-export * from './FeaturesCard'
+export * from './BenefitsCard'
+export * from './SolutionsHero'

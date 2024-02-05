@@ -1,6 +1,6 @@
-import { FeaturesCard } from "../components"
+import { BenefitsCard, SolutionsHero } from "../components"
 import { Hero } from "../components/Hero"
-import { featuresConstants } from "../constants/FeaturesConstants"
+import { benefitsConstants } from "../constants/BenefitsConstants"
 
 
 
@@ -16,13 +16,17 @@ export const HomePage = () => {
                 <div className="max-container bg-inherit padding-x grid grid-cols-3 max-xl:grid-cols-2 max-lg:grid-cols-1 place-items-center gap-10">
 
                     {
-                        featuresConstants.map(featureItem => (
+                        benefitsConstants.map(benefitItem => (
 
-                            <FeaturesCard key={featureItem.title} {...featureItem} />
+                            <BenefitsCard key={benefitItem.title} {...benefitItem} />
                         ))
                     }
 
                 </div>
+            </section>
+
+            <section className="padding w-full">
+                <SolutionsHero />
             </section>
         </>
     )

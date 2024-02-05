@@ -1,7 +1,13 @@
 import logo from './logo.png'
 import mapa from './mapome-slim.svg'
+import ring from './ring.jpg'
+import tracking from './tracking.jpg'
+import transport from './transport.jpg'
 
 export {
     logo,
-    mapa
+    mapa,
+    ring,
+    tracking,
+    transport
 }

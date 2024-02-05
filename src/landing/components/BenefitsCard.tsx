@@ -3,7 +3,7 @@ import { check } from "../../assets/icons"
 
 
 
-export const FeaturesCard = ({ title, icon, features }) => {
+export const BenefitsCard = ({ title, icon, benefits }) => {
     return (
 
         <div className=" rounded-xl w-[300px] h-[500px] bg-pale-blue shadow-3xl flex flex-col justify-center items-around p-8">
@@ -19,8 +19,8 @@ export const FeaturesCard = ({ title, icon, features }) => {
             <hr className="h-1 bg-primary" />
             <ul className="bg-transparent mt-10 text-montserrat">
                 {
-                    features.map(feature => (
-                        <li key={feature} className="mt-5 bg-transparent flex">
+                    benefits.map(benefit => (
+                        <li key={benefit} className="mt-5 bg-transparent flex">
                             <img
                                 src={check}
                                 alt="checkbox item"
@@ -28,7 +28,7 @@ export const FeaturesCard = ({ title, icon, features }) => {
                                 height={25}
                                 width={25}
                             />
-                            {feature}
+                            {benefit}
                         </li>
                     ))
                 }
