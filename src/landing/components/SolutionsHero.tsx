@@ -10,14 +10,14 @@ export const SolutionsHero = () => {
                 solutionsConstants.map(({ title, text, image }, index) => (
                     <div
                         key={text}
-                        className='flex gap-20 justify-between mb-15 items-center rounded-xl shadow-3xl'
+                        className='flex gap-20 justify-between mb-15 items-center rounded-xl shadow-3xl max-xl:flex-col'
                     >
                         <img
                             src={image}
                             alt={image}
                             // height={300}
                             // width={300}
-                            className={`object-cover h-[450px] w-[500px] ${index % 2 === 0 ? 'order-last rounded-r-xl' : 'rounded-l-xl'} flex-1`}
+                            className={`object-cover h-[450px] w-[500px] ${index % 2 === 0 ? 'order-last rounded-r-xl' : 'rounded-l-xl'} flex-1 max-xl:order-last max-xl:w-full max-xl:rounded-b-xl max-xl:rounded-t-none `}
                         />
 
 
