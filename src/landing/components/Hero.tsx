@@ -12,9 +12,9 @@ export const Hero = () => {
                     De la comarca a <span className="text-primary">Mordor</span> en 30 días
                 </h1>
 
-                <p className="text-black-pale mt-6 text-xl leading-10">Transportamos cualquier tipo de joyería para su posterior destrucción en la fragua que lo forjó</p>
-                <button className="group flex justify-center btn-primary w-full py-4 text-xl mt-20">
-                    Empezar
+                <p className="text-black-pale mt-6 text-2xl leading-10">Transportamos cualquier tipo de joyería para su posterior destrucción en la fragua que lo forjó</p>
+                <button className="group flex justify-center btn-primary w-full py-4 text-2xl mt-20">
+                    Acceder
                     <img src={rightArrow} alt={rightArrow} className="ml-2 rounded-full w-5 h-5 bg-primary group-hover:bg-primary-dark group-hover:translate-x-5 transition duration-500" />
                 </button>
             </div>

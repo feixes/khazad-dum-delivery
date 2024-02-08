@@ -16,7 +16,7 @@ export const BenefitsCard = ({ title, icon, benefits }) => {
                 className="bg-primary rounded-full p-2 mx-auto mb-10 border-primary-dark border-2" />
 
             <h4 className="text-2xl bg-transparent font-palanquin font-bold tracking-tighter">{title}</h4>
-            <hr className="h-1 bg-primary" />
+            <hr className="h-1 bg-primary border-primary" />
             <ul className="bg-transparent mt-10 text-montserrat">
                 {
                     benefits.map(benefit => (

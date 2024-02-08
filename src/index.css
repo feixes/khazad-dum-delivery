@@ -55,3 +55,13 @@
         @apply sm:pb-24 pb-12;
     }
 }
+
+@layer base {
+    .font-outline {
+        text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+    }
+}
