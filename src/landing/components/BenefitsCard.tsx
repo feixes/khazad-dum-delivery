@@ -1,6 +1,7 @@
 import { check } from "../../assets/icons"
 
 
+//TODO: debe de ser más grande todo y arreglar responsive
 
 
 export const BenefitsCard = ({ title, icon, benefits }) => {
