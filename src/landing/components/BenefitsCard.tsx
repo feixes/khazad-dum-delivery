@@ -6,7 +6,7 @@ import { check } from "../../assets/icons"
 export const BenefitsCard = ({ title, icon, benefits }) => {
     return (
 
-        <div className=" rounded-xl w-[300px] h-[500px] bg-pale-blue shadow-3xl flex flex-col justify-center items-around p-8">
+        <div className="rounded-xl w-[300px] h-[500px] bg-pale-blue shadow-3xl flex flex-col justify-center items-around p-8">
 
             <img
                 src={icon}
