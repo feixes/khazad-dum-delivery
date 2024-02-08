@@ -1,4 +1,4 @@
-import { rightArrow } from "../../assets/icons"
+
 import { mapa } from "../../assets/images"
 
 

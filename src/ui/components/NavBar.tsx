@@ -38,7 +38,7 @@ export const NavBar = () => {
 
 
     return (
-        <header className="text-black-pale w-full max-h-[10vh]">
+        <header className="text-black-pale w-full max-h-[10vh] text-2xl">
             <nav className="max-container flex flex-1 justify-around items-center p-10 mx-auto">
                 <Link to='/'>
                     <img
@@ -46,7 +46,7 @@ export const NavBar = () => {
                         className=" max-md:h-[35px] max-md:w-[150px] w-[200px] h-[40px] text-black-pale hover:text-black cursor-pointer"
                     />
                 </Link>
-                <ul className="flex font-medium text-xl gap-10 font-montserrat max-lg:gap-4 max-lg:text-base max-md:hidden px-6">
+                <ul className="flex font-medium text-2xl gap-10 font-montserrat max-lg:gap-4 max-lg:text-base max-md:hidden px-6">
                     <NavLink to='/'>
                         <li className="hover:text-black cursor-pointer">Home</li>
                     </NavLink>
