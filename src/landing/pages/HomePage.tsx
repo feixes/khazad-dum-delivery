@@ -53,10 +53,21 @@ export const HomePage = () => {
                         <FAQ key={faq.question} {...faq} />
                     ))
                 }
+
+                {/* <hr className="bg-primary border-primary h-1 mt-20 max-container" /> */}
             </section>
 
             <section className="padding w-full">
                 <div className="max-container">
+                    <div className="flex max-container gap-5 items-center">
+
+                        <h3 className="text-5xl font-palanquin tracking-tighter">Regístrate ya!</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-[3rem] h-[3rem]">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+
+                    </div>
+                    <hr className="bg-primary border-primary h-1 mb-20 max-container" />
 
                     <form className="flex m-auto max-lg:flex-col max-lg:gap-5 gap-5 max-w-[75%] ">
 
