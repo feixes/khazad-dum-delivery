@@ -79,8 +79,8 @@ export const HomePage = () => {
                         <button className="group max-lg:w-full w-[25%] text-black-pale bg-primary text-stroke hover:text-black font-bold font-palaquin flex items-center transition duration-500 rounded-full px-2 py-4 justify-center hover:bg-primary-dark text-xl">
                             Acceder
 
-                            <svg xmlns="http://www.w3.org/2000/svg" fill='#9af5e4' viewBox="0 0 24 24" stroke-width="3" stroke='currentColor' className="ml-2 fill-primary rounded-full w-5 h-5 group-hover:translate-x-5 transition duration-500 text-black-pale group-hover:text-black bg-primary group-hover:bg-primary-dark">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill='#9af5e4' viewBox="0 0 24 24" strokeWidth="3" stroke='currentColor' className="ml-2 fill-primary rounded-full w-5 h-5 group-hover:translate-x-5 transition duration-500 text-black-pale group-hover:text-black bg-primary group-hover:bg-primary-dark">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                             </svg>
                         </button>
 
