@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { cross, hamburgerMenu } from '../../assets/icons'
 import { Link, NavLink } from 'react-router-dom'
 import { logo } from '../../assets/images'
+import { useOpenModal } from '../../hooks/useOpenModal'
 
 export const NavBar = () => {
 
@@ -16,24 +17,26 @@ export const NavBar = () => {
 
     const hamMenu = useRef(null)
 
-    const [isOpen, setIsOpen] = useState(false)
+    const { isOpen, handleOpen } = useOpenModal(hamMenu)
 
-    const handleOpen = () => {
-        setIsOpen(prevState => !prevState)
-    }
+    // const [isOpen, setIsOpen] = useState(false)
 
-    useEffect(() => {
+    // const handleOpen = () => {
+    //     setIsOpen(prevState => !prevState)
+    // }
 
-        const closeMenu = (event) => {
-            if (!hamMenu.current.contains(event.target)) {
-                setIsOpen(false)
-            }
-        }
+    // useEffect(() => {
 
-        document.body.addEventListener('click', closeMenu)
+    //     const closeMenu = (event) => {
+    //         if (!hamMenu.current.contains(event.target)) {
+    //             setIsOpen(false)
+    //         }
+    //     }
 
-        return () => document.body.removeEventListener('click', closeMenu)
-    }, [])
+    //     document.body.addEventListener('click', closeMenu)
+
+    //     return () => document.body.removeEventListener('click', closeMenu)
+    // }, [])
 
 
 
