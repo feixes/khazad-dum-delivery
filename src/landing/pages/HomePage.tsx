@@ -1,7 +1,7 @@
 import { BenefitsCard, SolutionsHero, FAQ } from "../components"
 import { Hero } from "../components/Hero"
-import { benefitsConstants } from "../constants/BenefitsConstants"
-import { solutionsConstants } from "../constants/SolutionsConstants"
+import { faqConstants, benefitsConstants, solutionsConstants } from "../constants"
+
 
 
 
@@ -37,10 +37,12 @@ export const HomePage = () => {
             </section>
 
             <section className="padding w-full">
-                <FAQ />
-                <FAQ />
-                <FAQ />
-                <FAQ />
+
+                {
+                    faqConstants.map(faq => (
+                        <FAQ key={faq.question} {...faq} />
+                    ))
+                }
             </section>
         </>
     )
