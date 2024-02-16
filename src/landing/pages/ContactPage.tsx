@@ -1,7 +1,10 @@
+import { WorkInProgress } from "../../ui/components"
 
 
 export const ContactPage = () => {
     return (
-        <div>ContactPage</div>
+        <>
+            <WorkInProgress />
+        </>
     )
 }

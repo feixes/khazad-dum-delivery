@@ -1,7 +1,10 @@
+import { WorkInProgress } from "../../ui/components"
 
 
 export const AboutPage = () => {
     return (
-        <div>AboutPage</div>
+        <>
+            <WorkInProgress />
+        </>
     )
 }

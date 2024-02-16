@@ -1,6 +1,7 @@
+import { WorkInProgress } from "../../ui/components"
 
 export const RegisterPage = () => {
     return (
-        <div>RegisterPage</div>
+        <WorkInProgress />
     )
 }

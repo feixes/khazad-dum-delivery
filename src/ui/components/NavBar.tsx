@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useRef } from 'react'
 import { cross, hamburgerMenu } from '../../assets/icons'
 import { Link, NavLink } from 'react-router-dom'
 import { logo } from '../../assets/images'
@@ -19,29 +19,8 @@ export const NavBar = () => {
 
     const { isOpen, handleOpen } = useOpenModal(hamMenu)
 
-    // const [isOpen, setIsOpen] = useState(false)
-
-    // const handleOpen = () => {
-    //     setIsOpen(prevState => !prevState)
-    // }
-
-    // useEffect(() => {
-
-    //     const closeMenu = (event) => {
-    //         if (!hamMenu.current.contains(event.target)) {
-    //             setIsOpen(false)
-    //         }
-    //     }
-
-    //     document.body.addEventListener('click', closeMenu)
-
-    //     return () => document.body.removeEventListener('click', closeMenu)
-    // }, [])
-
-
-
     return (
-        <header className="text-black-pale w-full max-h-[10vh] text-2xl">
+        <header className="text-black-pale w-full max-h-[10vh] text-2xl ">
             <nav className="max-container flex flex-1 justify-around items-center p-10 mx-auto">
                 <Link to='/'>
                     <img
@@ -80,6 +59,7 @@ export const NavBar = () => {
             {
                 isOpen && (
                     <ul className="absolute w-full righ-[0%] flex-col pt-10 z-10 text-center font-medium text-2xl gap-10 font-montserrat px-6 border-b-2 pb-10 hidden max-md:flex">
+
                         <Link to='/'>
                             <li className="hover:text-black cursor-pointer">Home</li>
                         </Link>

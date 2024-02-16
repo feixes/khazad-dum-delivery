@@ -15,7 +15,7 @@ export const Footer = () => {
                             Home
                         </li>
                     </Link>
-                    <Link to='/detailed'>
+                    <Link to='/details'>
                         <li className="bg-primary m-8">
                             ¿Que Hacemos?
                         </li>
