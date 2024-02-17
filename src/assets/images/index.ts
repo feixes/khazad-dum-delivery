@@ -4,6 +4,7 @@ import ring from './ring.jpg'
 import tracking from './tracking.jpg'
 import transport from './transport.jpg'
 import workInProgress from './work-in-progress.jpg'
+import login from './login.jpg'
 
 export {
     logo,
@@ -11,5 +12,6 @@ export {
     ring,
     tracking,
     transport,
-    workInProgress
+    workInProgress,
+    login
 }

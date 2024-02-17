@@ -1,5 +1,4 @@
-import { Button } from "../../ui/components/Button"
-import { Input } from "../../ui/components/Input"
+
 import { BenefitsCard, SolutionsHero, FAQ } from "../components"
 import { Hero } from "../components/Hero"
 import { faqConstants, benefitsConstants, solutionsConstants } from "../constants"
@@ -8,7 +7,7 @@ import { faqConstants, benefitsConstants, solutionsConstants } from "../constant
 
 export const HomePage = () => {
     return (
-        <>
+        <main>
             <section className="flex justify-center items-center min-h-[90vh]">
                 <Hero />
             </section>
@@ -101,7 +100,7 @@ export const HomePage = () => {
                 </div>
 
             </section>
-        </>
+        </main>
     )
 }
 

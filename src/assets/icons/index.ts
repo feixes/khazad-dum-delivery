@@ -10,6 +10,9 @@ import twitter from './twitter.svg'
 import instagram from './instagram.svg'
 import youtube from './youtube.svg'
 import copyright from './copyright.svg'
+import { key } from './key'
+import { mail } from './mail'
+import { user } from './user'
 
 export {
     cross,
@@ -23,5 +26,8 @@ export {
     twitter,
     instagram,
     youtube,
-    copyright
+    copyright,
+    user,
+    mail,
+    key
 }
