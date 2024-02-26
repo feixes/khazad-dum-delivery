@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 
+
 export const useOpenModal = (modal) => {
 
   const [isOpen, setIsOpen] = useState(false)

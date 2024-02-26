@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import { solutionsConstants } from "../constants/SolutionsConstants"
 
 
 export const SolutionsHero = ({ title, text, image, index }) => {
