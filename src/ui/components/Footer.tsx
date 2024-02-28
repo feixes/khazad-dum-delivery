@@ -90,7 +90,7 @@ export const Footer = () => {
 
                 <div className="flex justify-start items-center bg-primary ">
                     <img src={copyright} alt="copyright" className="bg-primary h-4 w-4 mr-1" />
-                    <p className="bg-primary">Copyright 2024 Anddara</p>
+                    <p className="bg-primary">Copyright 2024 Khazad dûm Delivery Services</p>
                 </div>
                 <p className="bg-primary">All rights reserved</p>
 
