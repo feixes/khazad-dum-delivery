@@ -17,6 +17,13 @@
         margin: 0 auto;
     }
 
+    .bg-login {
+        background: url("./assets/images/login.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0%;
+    }
+
 
 
     .btn-primary {
