@@ -20,7 +20,7 @@ export const NavBar = () => {
     const { isOpen, handleOpen } = useOpenModal(hamMenu)
 
     return (
-        <header className="text-black-pale w-full max-h-[10vh] text-lg">
+        <header className="text-black-pale w-full min-h-[10vh] text-lg">
             <nav className="max-container flex flex-1 justify-around items-center p-10 mx-auto">
                 <Link to='/'>
                     <img

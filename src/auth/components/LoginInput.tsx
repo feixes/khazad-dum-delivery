@@ -18,7 +18,7 @@ export const LoginInput = ({ id, type, label, icon }: Props) => {
                 {label}
             </label>
 
-            <div className="flex items-center border border-black-pale rounded-2xl mt-2">
+            <div className="flex items-center border border-black-pale rounded-lg mt-2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 ml-4">
                     {icon}
                 </svg>

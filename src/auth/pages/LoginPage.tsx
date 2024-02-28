@@ -30,7 +30,7 @@ export const LoginPage = () => {
 
                     </form>
                     <div className="flex justify-between">
-                        <Link to='workinprogress'>
+                        <Link to='/workinprogress'>
                             <p className="mt-8 text-lg underline">He olvidado mi contraseña</p>
                         </Link>
                         <Link to='/auth/register'>
